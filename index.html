@@ -1,66 +1,796 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Импорт стиля</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normolize.css">
-    <style>
-
-    </style>
-  </head>
-  <body>
-    <header class="header">
-      <div class="menu ">
-        <div class="menu_wrap">
-         <div class="container">
-          <nav class="menu_nav">
-            <a href="#" class="menu_link">Главная</a>
-            <a href="#" class="menu_link">Продукция</a>
-            <a href="#" class="menu_link">Примеры работ</a>
-            <a href="#" class="menu_link">Примерка изображений</a>
-            <a href="#" class="menu_link">Стоимость дилерам</a>
-            <a href="#" class="menu_link">О нас</a>
-          </nav>
-         </div>
-        </div>
-      </div>
-      <div class="navbar">
-       
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
+  <title>Фабрика скинали</title>
+</head>
+<body>
+  <header class="header">
+    <div class="menu">
       <div class="container">
-       <div class="navbar-wrap">
-        <button class="menu-button navbar_menu-button">
-          <span class="menu-button_line"></span>
-          <span class="menu-button_line"></span>
-          <span class="menu-button_line"></span>
-        </button>
-        <div class="logo navbar_logo">
-          <strong class="logo_text">lorem ipsum</strong>
-          <span class="logo_description">neque porro quisquam</span>
-        </div>
-        <div class="navbar_mobile">
-          <a class="navbar_phone" href="tel:+77777777777">+7 (777) 777-77-77</a>
-          <span class="navbar_work-time navbar_small-text">Без выходных 9-21</span>
-        </div>
-        <div class="navbar_landline">
-          <a class="navbar_phone" href="tel: +77777777777">+7 (777) 777-77-77</a>
-          <a class="navbar_email navbar_small-text" href="mailto:mail@gmail.com">mail@gmail.com</a>
-        </div>
-        <button class="button-o navbar_button">Получить консультацию</button>
-       </div>
-       </div>
+        <nav class="menu__nav">
+          <a href="#hero" class="menu__link">Главная</a>
+          <a href="#features" class="menu__link">Преимущества</a>
+          <a href="#catalog" class="menu__link">Каталог</a>
+          <a href="#reviews" class="menu__link">Пример работ</a>
+          <a href="#before" class="menu__link">Примерка изображений</a>
+          <a href="#price" class="menu__link">Стоимость дилерам</a>
+          <a href="#blog" class="menu__link">О скинали</a>
+        </nav>
       </div>
-      <div class="hero">
-        <div class="container">
-          <h1 class="hero_title">
-            lorem ipsum<br>
-            fore rtisomfee<br>
-            fjrom
-          </h1>
-          <span class="hero_subtitle">от 3000 р/м2</span>
-          <button class="button hero_button">Order something</button>
+    </div>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-wrap">
+          <button class="menu-button navbar__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+          <div class="logo navbar__logo">
+            <strong class="logo__text">Фабрика скинали</strong>
+            <span class="logo__description">ведущий производитель скинали</span>
+          </div>
+          <!-- /.logo navbar__logo -->
+          <div class="navbar__mobile">
+            <a class="navbar__phone" href="tel:+79121234567">+7 912 123-45-67</a>
+            <span class="navbar__work-time navbar__small-text">без выходных 9-21</span>
+          </div>
+          <!-- /.logo navbar__mobile -->
+          <div class="navbar__landline">
+            <a class="navbar__phone" href="tel:+74991234567">+7 499 123-45-67</a>
+            <a href="mailto:info@mail.ru" class="navbar__email navbar__small-text">info@mail.ru</a>
+          </div>
+          <!-- /.logo navbar__landline -->
+          <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
+        </div>
+        <!-- /.navbar-wrap -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar -->
+    <div class="hero" id="hero">
+      <div class="container">
+        <h1 class="hero__title">Гарантия <br> минимальной цены <br> на скинали</h1>
+        <span class="hero__subtitle">от 3 000 р/м2</span>
+        <button class="button hero__button">Заказать скинали</button>
+      </div>
+    </div>
+    <!-- /.hero -->
+  </header>
+  <!-- /.header -->
 
+  <div class="main">
+      <section class="offer bg-secondary" id="offer">
+        <div class="container">
+          <div class="offer__block offer-block offer-block_calc-bg">
+            <h2 class="offer__title">Оставьте заявку на расчет</h2>
+            <span class="offer__subtitle">и получите скидку на изготовление скинали или фартука для кухни</span>
+            <form action="#" class="form offer__form">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="" class="form__label">Вид стекла</label>
+                  <input type="hidden" name="type" id="select-type" value="С печатью">
+                  <div class="select form__select">
+                    <div class="select_checked">С печатью</div>
+                    <ul class="select__dropdown">
+                      <li class="select__option" data-value="С печатью">С печатю</li>
+                      <li class="select__option" data-value="Без печати">Без печати</li>
+                    </ul>
+                  </div>
+                  <!-- /.select form__select -->
+                </div>
+                <div class="form__group">
+                  <label for="" class="form__label">Ширина, см</label>
+                  <input type="number" class="input form__input">
+                </div>
+                <div class="form__group">
+                  <label for="" class="form__label">Высота, см</label>
+                  <input type="number" class="input form__input">
+                </div>
+              </div>
+              <!-- /.form__row -->
+              <div class="form__row form__row-checkbox">
+                <div class="form__checkbox">
+                  <input class="checkbox" type="checkbox" id="install">
+                  <label class="checkbox__label" for="install">
+                    Монтаж
+                  </label>
+                </div>
+                <div class="form__checkbox">
+                  <input class="checkbox" type="checkbox" id="delivery">
+                  <label class="checkbox__label" for="delivery">
+                    Доставка
+                  </label>
+                </div>
+              </div>
+              <!-- /.form__row -->
+              <div class="form__row">
+                <div class="form__group">
+                  <input type="text" class="input form__input" placeholder="Ваше имя">
+                </div>
+                <div class="form__group">
+                  <input type="tel" class="input form__input" placeholder="Ваш телефон">
+                </div>
+                <div class="form__group">
+                  <input type="submit" class="button form__button" value="Получить скидку">
+                </div>
+              </div>
+              <!-- /.form__row -->
+            </form>
+            <!-- /.form offer__form -->
+          </div>
+          <!-- /.offer__block offer-block -->
         </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.offer -->
+      <section class="features section" id="features">
+        <div class="container">
+          <h2 class="section-title section__title">Наши преимущества</h2>
+          <div class="features-block">
+            <div class="features-block__item">
+              <img src="img/features/1.svg" alt="Бесплатный дизайн-макет" class="features-block__image">
+              <p class="features-block__text">Бесплатный <br> дизайн-макет</p>
+              <!-- /.features-block__text -->
+            </div>
+            <!-- /.features-block__item -->
+            <div class="features-block__item">
+              <img src="img/features/2.svg" alt="Пожизненная гарантия" class="features-block__image">
+              <p class="features-block__text">Пожизненная <br> гарантия</p>
+              <!-- /.features-block__text -->
+            </div>
+            <!-- /.features-block__item -->
+            <div class="features-block__item">
+              <img src="img/features/3.svg" alt="Большой каталог мзображений" class="features-block__image">
+              <p class="features-block__text">Большой каталог <br> изображений</p>
+              <!-- /.features-block__text -->
+            </div>
+            <!-- /.features-block__item -->
+            <div class="features-block__item">
+              <img src="img/features/4.svg" alt="100% соблюдение сроков" class="features-block__image">
+              <p class="features-block__text">100% <br> соблюдение сроков</p>
+              <!-- /.features-block__text -->
+            </div>
+            <!-- /.features-block__item -->
+            <div class="features-block__item">
+              <img src="img/features/5.svg" alt="Собственное производство" class="features-block__image">
+              <p class="features-block__text">Собственное <br> производство</p>
+              <!-- /.features-block__text -->
+            </div>
+            <!-- /.features-block__item -->
+            <div class="features-block__item">
+              <img src="img/features/6.svg" alt="Минимальная цена в городе от 600 р.метр" class="features-block__image">
+              <p class="features-block__text">Минимальная цена в городе <br> <br> от 600 р.метр</p>
+              <!-- /.features-block__text -->
+            </div>
+            <!-- /.features-block__item -->
+          </div>
+          <!-- /.features-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.features section -->
+      <section class="section catalog" id="catalog">
+        <div class="container">
+          <h2 class="section-title section__title">Каталог скинали</h2>
+          <div class="catalog-block">
+            <div class="catalog-card catalog__card">
+              <img class="catalog-card__image" src="img/catalog/catalog-image-1.png" alt=""><span class="catalog-card__tag">Коллажи</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+            <div class="catalog-card catalog__card">
+              <img class="catalog-card__image" src="img/catalog/catalog-image-2.png" alt=""><span class="catalog-card__tag">Авторская коллекция</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+            <div class="catalog-card catalog__card">
+              <img class="catalog-card__image" src="img/catalog/catalog-image-3.png" alt=""><span class="catalog-card__tag">Коллажи</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+            <div class="catalog-card catalog__card">
+              <img class="catalog-card__image" src="img/catalog/catalog-image-4.png" alt=""><span class="catalog-card__tag">Авторская коллекция</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+            <div class="catalog-card catalog__card">
+              <img class="catalog-card__image" src="img/catalog/catalog-image-5.png" alt=""><span class="catalog-card__tag">Коллажи</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+            <div class="catalog-card catalog__card">
+              <img class="catalog-card__image" src="img/catalog/catalog-image-6.png" alt=""><span class="catalog-card__tag">Абстракция</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+            <div class="catalog-card catalog__card">
+              <img src="img/catalog/catalog-image-7.png" alt=""><span class="catalog-card__tag">Коллажи</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+            <div class="catalog-card catalog__card">
+              <img src="img/catalog/catalog-image-8.png" alt=""><span class="catalog-card__tag">Абстракция</span> <!-- /.catalog-card__tag -->
+              <div class="catalog-card__buttons">
+                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
+                <!-- /.button-fitting catalog-card__button -->
+                <button class="button-add catalog-card__button">Заказать</button>
+                <!-- /.button-add catalog-card__button -->
+                <button class="button-like"><img src="img/like.png" alt=""></button>
+                <!-- /.button-like -->
+              </div>
+              <!-- /.catalog-card__buttons -->
+            </div>
+            <!-- /.catalog-card -->
+          </div>
+          <!-- /.catalog-block -->
+          <div class="catalog__link">
+            <a href="#" class="button catalog__link-more button_lg">Смотреть весь каталог скинали</a>
+            <span class="catalog__description">Более 3000 изображений скинали в 25 рубриках</span>
+          </div>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section catalog -->
+      <section class="section blog" id="blog">
+        <div class="container">
+          <div class="blog__heading">
+            <h3 class="blog__title">Полезное или что важно знать о скиналли...</h3>
+            <a href="#" class="blog__link-more">Читать все статьи</a>
+          </div>
+          <div class="blog-list">
+            <div class="blog-card blog-list_card">
+              <div class="blog-list__image">
+                <img src="img/blog-list/blog-post-1.png" alt="">
+              </div>
+              <!-- /.blog-list__image -->
+              <div class="blog-list__text">Виды стекла</div>
+              <!-- /.blog-list__text -->
+            </div>
+            <!-- /.blog-card blog-list_card -->
+            <div class="blog-card blog-list_card">
+              <div class="blog-list__image">
+                <img src="img/blog-list/blog-post-2.png" alt="">
+              </div>
+              <!-- /.blog-list__image -->
+              <div class="blog-list__text">Виды печати</div>
+              <!-- /.blog-list__text -->
+            </div>
+            <!-- /.blog-card blog-list_card -->
+            <div class="blog-card blog-list_card">
+              <div class="blog-list__image">
+                <img src="img/blog-list/blog-post-3.png" alt="">
+              </div>
+              <!-- /.blog-list__image -->
+              <div class="blog-list__text">Виды крепежа и монтажа</div>
+              <!-- /.blog-list__text -->
+            </div>
+            <!-- /.blog-card blog-list_card -->
+            <div class="blog-card blog-list_card">
+              <div class="blog-list__image">
+                <img src="img/blog-list/blog-post-4.png" alt="">
+              </div>
+              <!-- /.blog-list__image -->
+              <div class="blog-list__text">Вопросы и ответы</div>
+              <!-- /.blog-list__text -->
+            </div>
+            <!-- /.blog-card blog-list_card -->
+          </div>
+          <!-- /.blog-list -->
+          <!-- /.blog-list__heading -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section blog-list -->
+
+      <section class="section price" id="price">
+        <div class="container">
+          <h2 class="section-title section__title">Цены и виды скинали</h2>
+          <!-- /.section-title section__title -->
+          <div class="price-block">
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-1.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">Прозрачные</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-2.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">Однотонные</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-3.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">Полноцветные</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-4.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">Стекло</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-5.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">Зеркальные</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-6.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">с подсветкой</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-7.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">Световые панели</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+            <div class="price-card price-block__card">
+              <div class="price-card__image"><img src="img/price/price-8.png" alt=""></div>
+              <!-- /.price-card__image -->
+              <div class="price-card__text">
+                <div class="price-card__pricetag">
+                  <h4 class="price-card__title">Пано, картины</h4>
+                  <!-- /.price-card__title -->
+                  <span class="price-card__cost">от 3 500 р/м2</span>
+                  <!-- /.price-card__cost -->
+                </div>
+                <!-- /.price-card__pricetag -->
+                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                <!-- /.price-card__button -->
+              </div>
+              <!-- /.price-card__text -->
+            </div>
+            <!-- /.price-card -->
+          </div>
+          <!-- /.price-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section price -->
+      <section class="section steps">
+        <div class="container">
+          <h2 class="section-title section__title">Этапы работ</h2>
+          <!-- /.section__title -->
+          <div class="steps-block">
+            <div class="step">
+              <img src="img/steps/1.svg" alt="" class="step__img">
+              <h4 class="step__title">Заявка</h4>
+              <!-- /.step__title -->
+              <p class="step__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+              <!-- /.step__text -->
+            </div>
+            <!-- /.step -->
+            <div class="step">
+              <img src="img/steps/2.svg" alt="" class="step__img">
+              <h4 class="step__title">Замер</h4>
+              <!-- /.step__title -->
+              <p class="step__text">Вы производите замер сами или наш специалист выезжает к вам</p>
+              <!-- /.step__text -->
+            </div>
+            <!-- /.step -->
+            <div class="step">
+              <img src="img/steps/3.svg" alt="" class="step__img">
+              <h4 class="step__title">Договор</h4>
+              <!-- /.step__title -->
+              <p class="step__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+              <!-- /.step__text -->
+            </div>
+            <!-- /.step -->
+            <div class="step">
+              <img src="img/steps/4.svg" alt="" class="step__img">
+              <h4 class="step__title">Дизайн</h4>
+              <!-- /.step__title -->
+              <p class="step__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+              <!-- /.step__text -->
+            </div>
+            <!-- /.step -->
+            <div class="step">
+              <img src="img/steps/5.svg" alt="" class="step__img">
+              <h4 class="step__title">Производство</h4>
+              <!-- /.step__title -->
+              <p class="step__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+              <!-- /.step__text -->
+            </div>
+            <!-- /.step -->
+            <div class="step">
+              <img src="img/steps/6.svg" alt="" class="step__img">
+              <h4 class="step__title">Монтаж</h4>
+              <!-- /.step__title -->
+              <p class="step__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+              <!-- /.step__text -->
+            </div>
+            <!-- /.step -->
+          </div>
+          <!-- /.steps-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section steps -->
+
+      <section class="section before" id="before">
+        <div class="container">
+          <h2 class="section-title section__title">До и после</h2>
+          <div class="before-slider-wrap">
+            <div class="before-slider">
+              <div class="before-slider__item">
+                <div class="before-after">
+                  <img src="img/before-slider/sample-before.png" alt="">
+                  <img src="img/before-slider/sample-after.png" alt="">
+                </div>
+              </div>
+              <!-- /.before-slider__item -->
+              <div class="before-slider__item">
+                <div class="before-after">
+                  <img src="img/before-slider/sample-before.png" alt="">
+                  <img src="img/before-slider/sample-after.png" alt="">
+                </div>
+              </div>
+              <!-- /.before-slider__item -->
+              <div class="before-slider__item">
+                <div class="before-after">
+                  <img src="img/before-slider/sample-before.png" alt="">
+                  <img src="img/before-slider/sample-after.png" alt="">
+                </div>
+              </div>
+              <!-- /.before-slider__item -->
+            </div>
+            <!-- /.before-slider -->
+            <div class="before-slider-arrows">
+              <button class="arrow arrow-left">
+                <img src="img/before-slider/left.png" alt="">
+              </button>
+              <button class="arrow arrow-right">
+                <img src="img/before-slider/right.png" alt="">
+              </button>
+            </div>
+            <!-- /.before-slider-arrows -->
+          </div>
+          <!-- /.before-slider-wrap -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section before -->
+
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <h2 class="section-title section__title">Отзывы наших клиентов</h2>
+          <!-- /.section__title -->
+          <div class="reviews-slider">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__text">Очень часто мы сталкиваемся с недопонианием со стороны сотрудников банка, и иной раз "навешают лапши на уши" и культурно пошлют...</div>
+              <!-- /.reviews-slider__text -->
+              <img src="img/reviews/review-1.png" alt="" class="reviews-slider__image">
+              <span class="reviews-slider__name">Екатерина Иванова Москва</span>
+              <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__item -->
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__text">Очень часто мы сталкиваемся с недопонианием со стороны сотрудников банка, и иной раз
+                "навешают лапши на уши" и культурно пошлют...</div>
+              <!-- /.reviews-slider__text -->
+              <img src="img/reviews/review-2.png" alt="" class="reviews-slider__image">
+              <span class="reviews-slider__name">Екатерина Иванова Москва</span>
+              <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__item -->
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__text">Очень часто мы сталкиваемся с недопонианием со стороны сотрудников банка, и иной раз
+                "навешают лапши на уши" и культурно пошлют...</div>
+              <!-- /.reviews-slider__text -->
+              <img src="img/reviews/review-3.png" alt="" class="reviews-slider__image">
+              <span class="reviews-slider__name">Екатерина Иванова Москва</span>
+              <!-- /.reviews-slider__name -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.reviews-slider -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section reviews -->
+      <section class="offer">
+        <div class="container">
+          <div class="offer__block offer-block offer-block_price-bg">
+            <h2 class="offer__title">Ищите где дешевле и лучше?</h2>
+            <span class="offer__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите это и мы вам пересчитаем заказ с максимальной скидкой</span>
+            <form action="#" class="form offer__form">
+              <div class="form__row">
+                <div class="form__group">
+                  <input type="text" class="input form__input" placeholder="Ваше имя">
+                </div>
+                <div class="form__group">
+                  <input type="tel" class="input form__input" placeholder="Ваш телефон">
+                </div>
+                <div class="form__group">
+                  <input type="text" class="input form__input" placeholder="Ваша цена">
+                </div>
+              </div>
+              <!-- /.form__row -->
+              <div class="form__row">
+                <div class="form__group">
+                  <input type="submit" class="button form__button" value="Получить расчет со скидкой">
+                </div>
+                <div class="form__group">
+                  <span class="form__policy">Ваши данные надежно защищены. Отправление заявки ни к чему не обязывает.</span>
+                </div>
+              </div>
+              <!-- /.form__row -->
+            </form>
+            <!-- /.form offer__form -->
+          </div>
+          <!-- /.offer__block offer-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.offer -->
+      <section class="section factory">
+        <div class="container">
+          <h2 class="section-title section__title">О производстве</h2>
+          <!-- /.section-title section__title -->
+          <div class="factory-block">
+            <div class="factory-block__image">
+              <img src="img/factory/factory-image.png" alt="">
+            </div>
+            <!-- /.factory-block__image -->
+            <div class="factory-block__text">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, a ad quibusdam odit quasi fugit totam, debitis vero
+              molestiae quas, exercitationem nesciunt harum explicabo ut consequatur omnis possimus. Accusamus, dignissimos.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, a ad quibusdam odit quasi fugit totam, debitis vero molestiae quas, exercitationem nesciunt harum explicabo ut consequatur omnis possimus. Accusamus, dignissimos.</p>
+            </div>
+            <!-- /.factory-block__text -->
+          </div>
+          <!-- /.factory-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section factory -->
+      <section class="section contacts">
+        <div class="container">
+          <h2 class="section-title section__title">Контакты</h2>
+          <!-- /.section-title section__title -->
+          <div class="contacts-block">
+            <div class="contacts-block__item">
+              <img src="img/contacts/phone.svg" alt="" class="contacts__image">
+              <div class="contats__text">
+                <a href="#" class="contacts__link">+7 499 123-45-67</a>
+              </div>
+              <!-- /.contats__text -->
+            </div>
+            <!-- /.contacts-block__item -->
+            <div class="contacts-block__item">
+              <img src="img/contacts/location.svg" alt="" class="contacts__image">
+              <div class="contats__text">
+                <address class="contacts__addres">Каширское шоссе, д. 23, офис 345</address>
+              </div>
+              <!-- /.contats__text -->
+            </div>
+            <!-- /.contacts-block__item -->
+            <div class="contacts-block__item">
+              <img src="img/contacts/email.svg" alt="" class="contacts__image">
+              <div class="contats__text">
+                <a href="#" class="contacts__link">540177@mail.ru</a>
+              </div>
+              <!-- /.contats__text -->
+            </div>
+            <!-- /.contacts-block__item -->
+          </div>
+          <!-- /.contacts-bloc -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section contacts -->
+      <div class="map" id="map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A198a90bb6cfcec6f9e5c555cded447838facee6b12845dff5a812cc990b55d40&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
-    </header>
-  </body>
+      <!-- /.map -->
+      <section class="section questions">
+        <div class="container">
+          <div class="questions-block">
+            <h3 class="questions-title questions__title">Остались вопросы?</h3>
+            <!-- /.questions-title questions__title -->
+            <a href="#" class="questions__link">Задайте их менеджеру</a>
+            <!-- /.questions__link -->
+          </div>
+          <!-- /.questions-block -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section questions -->
+  </div>
+  <!-- /.main -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer__description">
+          <h4 class="footer__title footer-title">Фабрика скинали №1</h4>
+          <span class="footer__subtitle">ведущий производитель скинали</span>
+          <span class="footer__copy">@ Фабрика скинали #1</span>
+        </div>
+        <!-- /.footer__description -->
+        <div class="footer__pay-info">
+          <img src="img/footer/webmoney.svg" alt="" class="footer__pay-logo">
+          <img src="img/footer/yandexmoney.svg" alt="" class="footer__pay-logo">
+          <img src="img/footer/visa.svg" alt="" class="footer__pay-logo">
+          <img src="img/footer/mastercard.svg" alt="" class="footer__pay-logo">
+        </div>
+        <!-- /.footer__pay-info -->
+        <div class="footer__contacts">
+          <a href="#" class="footer__phone">+7 499 123-45-67</a>
+          <a href="" class="footer__mail">info@mail.ru</a>
+          <div class="footer-social">
+            <a href="#" class="footer-social__link">
+              <img src="img/footer/socials/vk.svg" alt="">
+            </a>
+            <a href="#" class="footer-social__link">
+              <img src="img/footer/socials/twitter.svg" alt="">
+            </a>
+            <a href="#" class="footer-social__link">
+              <img src="img/footer/socials/instagram.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- /.footer__contacts -->
+      </div>
+      <!-- /.footer-block -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+
+<!-- Подключение виджета обратной связи через соцсети -->
+<script type="text/javascript" src="https://spikmi.com/Widget?Id=1969"></script>
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.event.move.js"></script>
+<script src="js/jquery.twentytwenty.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+</script>
+</body>
 </html>

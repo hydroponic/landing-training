@@ -1,16 +1,26 @@
 .hero
-    background: #f1f1f1 url('../img/hero/hero-bg.jpg') no-repeat center top 0px
-    background-size: contain
-    padding-top: 120px
-    padding-bottom: 270px
-    &_title
-        font-size: 30px
-        margin-bottom: 40px
-    &_subtitle
-        display: block
-        font-size: 30px
-        +bold
-        margin-bottom: 67px
-    &_button
-        display: block
-        
+  background: #f1f1f1 url('../img/hero/hero-bg.jpg') no-repeat center top
+  background-size: cover
+  padding-top: 120px
+  padding-bottom: 270px
+  margin-top: 80px
+  &__title
+    margin-bottom: 40px
+    font-size: 30px
+  &__subtitle
+    display: block
+    margin-bottom: 67px
+    font-size: 30px
+    +bold
+.button
+  text-transform: uppercase
+  padding: 25px 45px
+  border: none
+  background-color: $primary
+  color: white
+  +bold
+
+@media (max-width: 991px)
+  .hero
+    background-size: 100%
+    background-position: top right
