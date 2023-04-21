@@ -1,0 +1,78 @@
+.navbar
+    position: fixed
+    left: 0
+    z-index: 99
+    top: 0
+    width: 100%
+    background-color: #fff
+    &-wrap
+        display: flex
+        align-items: center
+        min-height: 80px
+        justify-content: space-between
+    &_mobile,&_landline
+        text-align: right
+    &_phone
+        text-decoration: none
+        display: block
+        font-size: 19px
+        +bold
+        color: $text-color
+        margin-bottom: 5px
+    &_small-text
+        display: block
+        font-size:14px
+        color: $text-color-light
+        text-decoration: nonw
+.menu
+    position: fixed
+    z-index: 0
+    transform: translateY(-100%)
+    transition: 0.2
+    top: 80px
+    left: 0
+    width: 100%
+    padding: 16px 0
+    background-color: $primary
+    color: #ffff
+    &_active
+        transform: TranslateY(0)
+    &_nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &_link
+        text-decoration: none
+        font-size: 17px
+        text-transform: uppercase
+        color: #ffff
+         
+    &-button
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        background-color: transparent
+        border: none
+        border-right: 1px solid rgba(#510bba, 0.1)
+        border-left: 1px solid rgba(#510bba, 0.1)
+        height: 80px
+        width: 70px
+        &_line
+            display: block
+            width:20px
+            height:2px 
+            background-color: #89a9eb
+            margin: 2px 0
+.logo
+    &_text
+        display: block
+        margin-bottom: 5px
+        font-size: 18px
+        text-transform: uppercase
+        +bold
+    &_description
+        display: block
+        font-size: 14px
+        color: $text-color-light
+        font-size: 14px
